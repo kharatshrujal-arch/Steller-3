@@ -46,7 +46,7 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 ---
 
 ### ✨ Aid Case Creation
-<img src="photo/UI2.png" alt="Create Aid Case" width="800"/>
+<img src="photo/UI-2.png" alt="Create Aid Case" width="800"/>
 
 *Create new aid cases with beneficiary details and funding goals*
 
