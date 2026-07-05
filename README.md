@@ -53,7 +53,7 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 ---
 
 ### 🔴 Real-time Event Stream
-<img src="photo/UI3.png" alt="Event Stream Ledger" width="800"/>
+<img src="photo/UI-3.png" alt="Event Stream Ledger" width="800"/>
 
 *Live event panel showing all on-chain transactions and contract interactions*
 
