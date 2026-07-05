@@ -39,7 +39,7 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 <div align="center">
 
 ### 📱 Dashboard Interface
-<img src="photo/UI1.png" alt="AidPulse Dashboard" width="800"/>
+<img src="https://github.com/kharatshrujal-arch/Steller-3/blob/main/photo/UI-2.png" alt="AidPulse Dashboard" width="800"/>
 
 *Main dashboard showing wallet connection, balance display, and aid case management*
 
