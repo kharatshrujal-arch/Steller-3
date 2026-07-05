@@ -1,0 +1,484 @@
+﻿:root {
+  color: #1f2937;
+  background: #eef2f6;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input { font: inherit; }
+
+input {
+  background: #ffffff;
+  border: 1px solid #d7dee9;
+  border-radius: 8px;
+  color: #1f2937;
+  min-height: 42px;
+  padding: 0.7rem 0.8rem;
+  width: 100%;
+}
+
+label {
+  color: #5b687a;
+  display: grid;
+  font-size: 0.9rem;
+  font-weight: 700;
+  gap: 0.4rem;
+}
+
+h1,
+h2,
+h3,
+p { margin: 0; }
+
+.route-anchor {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.app-shell {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 360px),
+    #eef2f6;
+  color: #1f2937;
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.preview-shell {
+  max-width: 1360px;
+}
+
+.app-header,
+.hero-panel,
+.balance-panel,
+.panel,
+.notice-bar,
+.wallet-summary-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #dbe3ee;
+  border-radius: 8px;
+  box-shadow: 0 16px 36px rgba(31, 41, 55, 0.07);
+}
+
+.app-header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.brand-row,
+.header-actions,
+.panel-heading {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.brand-mark {
+  align-items: center;
+  background: #1f2937;
+  border-radius: 8px;
+  color: #ffffff;
+  display: grid;
+  font-size: 1.2rem;
+  font-weight: 900;
+  height: 44px;
+  place-items: center;
+  width: 44px;
+}
+
+.eyebrow,
+.card-label {
+  color: #2563eb;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.app-header h1 {
+  font-size: 1.3rem;
+  line-height: 1.15;
+}
+
+.header-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+
+button,
+.button-link {
+  cursor: pointer;
+  border: 0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+button.primary-action,
+button.secondary-action,
+.button-link,
+.disabled-action {
+  width: fit-content;
+}
+
+.wallet-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.two-column-workspace {
+  grid-template-columns: minmax(240px, 0.8fr) minmax(240px, 0.9fr) minmax(240px, 0.9fr) minmax(320px, 1.1fr);
+}
+.status-pill,
+.button-link,
+.disabled-action,
+button.primary-action,
+button.secondary-action {
+  align-items: center;
+  border-radius: 8px;
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.62rem 0.85rem;
+  text-decoration: none;
+}
+
+.status-pill.pending,
+.notice-bar.pending {
+  background: #fff8eb;
+  border: 1px solid #f3d19b;
+  color: #995c00;
+}
+
+.status-pill.success,
+.notice-bar.success {
+  background: #ecfdf5;
+  border: 1px solid #a8e8c6;
+  color: #047857;
+}
+
+.primary-action {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.primary-action:hover {
+  background: #1d4ed8;
+}
+
+.secondary-action,
+.disabled-action {
+  background: #f8fafc;
+  border: 1px solid #d7dee9;
+  color: #4b5563;
+}
+
+.disabled-action {
+  cursor: not-allowed;
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) 320px;
+}
+
+.hero-panel {
+  align-items: stretch;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  padding: 1rem;
+}
+
+.hero-copy {
+  align-content: center;
+  display: grid;
+  gap: 0.9rem;
+  min-height: 260px;
+  padding: 0.5rem;
+}
+
+.hero-copy h2 {
+  color: #111827;
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  line-height: 1.02;
+  max-width: 860px;
+}
+
+.hero-copy p,
+.muted {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.wallet-summary-card,
+.balance-panel {
+  align-content: center;
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.wallet-summary-card strong {
+  color: #111827;
+  font-size: 1.25rem;
+  overflow-wrap: anywhere;
+}
+
+.wallet-summary-card small {
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.balance-value {
+  color: #047857;
+  font-size: clamp(2.2rem, 5vw, 3.35rem);
+  font-weight: 950;
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+.workspace-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(240px, 0.9fr) minmax(240px, 0.9fr) minmax(320px, 1.1fr);
+}
+
+.panel {
+  align-content: start;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.panel h3 {
+  color: #111827;
+  font-size: 1.06rem;
+}
+
+.icon-box {
+  align-items: center;
+  background: #eef4ff;
+  border: 1px solid #cad8f6;
+  border-radius: 8px;
+  color: #1d4ed8;
+  display: grid;
+  font-size: 0.8rem;
+  font-weight: 900;
+  height: 40px;
+  place-items: center;
+  width: 40px;
+}
+
+.case-box {
+  background: #f8fafc;
+  border: 1px solid #dbe3ee;
+  border-radius: 8px;
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.85rem;
+}
+
+.case-box span,
+.case-box small {
+  color: #64748b;
+}
+
+.case-box strong {
+  color: #111827;
+}
+
+.ledger-list {
+  display: grid;
+  gap: 0.7rem;
+  max-height: 540px;
+  overflow: auto;
+}
+
+.event-item {
+  background: #f8fafc;
+  border: 1px solid #dbe3ee;
+  border-left: 3px solid #2563eb;
+  border-radius: 8px;
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.75rem;
+}
+
+.event-success {
+  border-left-color: #10b981;
+}
+
+.event-item strong {
+  color: #111827;
+}
+
+.event-item span,
+.event-item small {
+  color: #64748b;
+  overflow-wrap: anywhere;
+}
+
+.notice-bar {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.9rem 1rem;
+}
+
+.notice-bar span {
+  overflow-wrap: anywhere;
+}
+
+.when-connected { display: none; }
+.when-disconnected { display: inline-flex; }
+.wallet-summary-card .when-disconnected,
+.balance-panel .when-disconnected,
+.notice-bar.when-disconnected { display: grid; }
+
+#wallet-connected:target ~ .app-shell .when-connected { display: inline-flex; }
+#wallet-connected:target ~ .app-shell .wallet-summary-card .when-connected,
+#wallet-connected:target ~ .app-shell .balance-panel .when-connected,
+#wallet-connected:target ~ .app-shell .notice-bar.when-connected { display: grid; }
+#wallet-connected:target ~ .app-shell .event-item.when-connected { display: grid; }
+#wallet-connected:target ~ .app-shell .when-disconnected { display: none; }
+
+@media (max-width: 1120px) {
+  .dashboard-grid,
+  .hero-panel,
+  .workspace-grid,
+  .two-column-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy {
+    min-height: auto;
+  }
+
+  .ledger-list {
+    max-height: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .app-shell {
+    padding: 0.75rem;
+  }
+
+  .app-header {
+    align-items: flex-start;
+    display: grid;
+  }
+
+  .header-actions,
+  .button-link,
+  .status-pill,
+  .disabled-action,
+  button.primary-action,
+  button.secondary-action {
+    width: 100%;
+  }
+
+  .brand-row {
+    align-items: flex-start;
+  }
+
+  .hero-panel,
+  .balance-panel,
+  .panel,
+  .notice-bar,
+  .app-header {
+    padding: 0.85rem;
+  }
+}
+
+
+.mobile-demo-shell {
+  max-width: 430px;
+  padding: 0.75rem;
+}
+
+.mobile-demo-shell .app-header,
+.mobile-demo-shell .brand-row,
+.mobile-demo-shell .wallet-options {
+  align-items: stretch;
+  display: grid;
+}
+
+.mobile-demo-shell .brand-row {
+  grid-template-columns: 44px minmax(0, 1fr);
+}
+
+.mobile-demo-shell .primary-action,
+.mobile-demo-shell .secondary-action,
+.mobile-demo-shell .status-pill {
+  width: 100%;
+}
+
+.mobile-demo-shell .ledger-list {
+  max-height: none;
+}
+
+.ledger-tools {
+  align-items: end;
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.case-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.case-mini {
+  background: #f8fafc;
+  border: 1px solid #dbe3ee;
+  border-radius: 8px;
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.7rem;
+}
+
+.case-mini strong {
+  color: #111827;
+}
+
+.case-mini span {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.event-item[hidden] {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .ledger-tools {
+    grid-template-columns: 1fr;
+  }
+}

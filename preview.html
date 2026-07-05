@@ -1,0 +1,138 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AidPulse Wallet Dashboard</title>
+    <link rel="stylesheet" href="src/styles/app.css" />
+  </head>
+  <body>
+    <main class="app-shell preview-shell">
+      <header class="app-header" id="desktop-preview">
+        <div class="brand-row">
+          <div class="brand-mark">A</div>
+          <div>
+            <p class="eyebrow">AidPulse</p>
+            <h1>Community Aid Escrow</h1>
+          </div>
+        </div>
+        <div class="header-actions">
+          <span class="status-pill pending" id="walletStatus">Wallet not connected</span>
+          <button class="secondary-action" id="disconnectWallet" type="button" disabled>Disconnect</button>
+        </div>
+      </header>
+
+      <section class="dashboard-grid">
+        <section class="hero-panel">
+          <div class="hero-copy">
+            <p class="eyebrow">Real multi-wallet connection</p>
+            <h2>Connect your own Stellar wallet before using AidPulse.</h2>
+            <p>
+              AidPulse supports Freighter and Albedo. No demo wallet is pre-connected; every wallet state below comes from the user connecting their own wallet.
+            </p>
+          </div>
+          <div class="wallet-summary-card">
+            <span class="card-label">Connected wallet</span>
+            <strong id="publicKey">No wallet connected</strong>
+            <small id="walletProvider">Choose Freighter or Albedo to continue.</small>
+          </div>
+        </section>
+
+        <aside class="balance-panel" id="mobile-responsive">
+          <span class="card-label">XLM Balance</span>
+          <div class="balance-value" id="balanceValue">0.0000000</div>
+          <p class="muted" id="balanceHint">Balance loads after a real wallet connects on Stellar Testnet.</p>
+        </aside>
+      </section>
+
+      <section class="workspace-grid two-column-workspace">
+        <article class="panel wallet-connect-panel">
+          <div class="panel-heading">
+            <span class="icon-box">01</span>
+            <div>
+              <p class="eyebrow">Wallets</p>
+              <h3>Connect Wallet</h3>
+            </div>
+          </div>
+          <div class="wallet-options">
+            <button class="primary-action" id="connectFreighter" type="button">Connect Freighter</button>
+            <button class="secondary-action" id="connectAlbedo" type="button">Connect Albedo</button>
+          </div>
+          <p class="muted">
+            Freighter requires Chrome/Brave with the extension installed and unlocked. Albedo opens its hosted wallet flow and returns after approval.
+          </p>
+        </article>
+
+        <article class="panel aid-case-panel">
+          <div class="panel-heading">
+            <span class="icon-box">02</span>
+            <div>
+              <p class="eyebrow">Aid case</p>
+              <h3>Create / Call Aid Case</h3>
+            </div>
+          </div>
+          <div class="case-box">
+            <span>Case #0</span>
+            <strong>Emergency clinic transport</strong>
+            <small>Pune community health desk - verified steward - target 35 XLM</small>
+          </div>
+          <button class="primary-action" id="mockContractCall" type="button" disabled>Call aid case</button>
+        </article>
+
+        <article class="panel transfer-panel">
+          <div class="panel-heading">
+            <span class="icon-box">03</span>
+            <div>
+              <p class="eyebrow">Payment</p>
+              <h3>Send Testnet XLM</h3>
+            </div>
+          </div>
+          <label>Destination address<input id="destinationAddress" placeholder="G..." /></label>
+          <label>Amount<input id="sendAmount" value="1" inputmode="decimal" /></label>
+          <button class="primary-action" id="mockPayment" type="button" disabled>Send payment</button>
+        </article>
+
+
+        <article class="panel feature-panel">
+          <div class="panel-heading">
+            <span class="icon-box">05</span>
+            <div>
+              <p class="eyebrow">Case manager</p>
+              <h3>Create Local Aid Case</h3>
+            </div>
+          </div>
+          <label>Case title<input id="caseTitle" value="Medicine support" /></label>
+          <label>Target XLM<input id="caseTarget" value="25" inputmode="decimal" /></label>
+          <button class="primary-action" id="createCaseButton" type="button">Add case</button>
+          <div class="case-list" id="caseList">
+            <article class="case-mini"><strong>Emergency clinic transport</strong><span>35 XLM target</span></article>
+          </div>
+        </article>
+        <aside class="event-ledger panel">
+          <div class="panel-heading">
+            <span class="icon-box">04</span>
+            <div>
+              <p class="eyebrow">Live feed</p>
+              <h3>Event Stream Ledger</h3>
+            </div>
+          </div>
+          <div class="ledger-tools"><label>Filter events<input id="eventFilter" placeholder="wallet, case, rpc" /></label><button class="secondary-action" id="clearEventsButton" type="button">Clear</button></div><div class="ledger-list" id="ledgerList">
+            <article class="event-item"><strong>wallet / waiting</strong><span>Local</span><small>Waiting for a real wallet connection</small></article>
+            <article class="event-item"><strong>case / released</strong><span>Ledger 912884</span><small>35 XLM released to beneficiary</small></article>
+            <article class="event-item"><strong>case / funded</strong><span>Ledger 912861</span><small>12 XLM funded by donor</small></article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="notice-bar pending" id="noticeBar">
+        <strong>Connect a real wallet.</strong>
+        <span>Use Freighter or Albedo. The app will not fake a connected state.</span>
+      </section>
+    </main>
+
+    <script defer src="src/preview.js"></script>
+  </body>
+</html>
+
+
+
