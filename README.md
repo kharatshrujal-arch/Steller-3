@@ -8,8 +8,28 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 
 ---
 
+## 🚀 Live Demo
+
+<div align="center">
+
+### **[🌐 View Live Application](https://your-app.vercel.app)**
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/kharatshrujal-arch/Steller-3)
+
+**Deployed on Vercel** | **Status: Live** ✅
+
+</div>
+
+> **⚠️ Important:** To interact with the live application, you need:
+> - 🦊 [Freighter Wallet](https://www.freighter.app/) installed
+> - 🌐 Wallet set to **Stellar Testnet**
+> - 💰 Test XLM from [Stellar Laboratory](https://laboratory.stellar.org/#account-creator?network=test)
+
+---
+
 ## Table of contents
 
+- [🚀 Live Demo](#-live-demo)
 - [How it works](#how-it-works)
 - [Screenshots](#screenshots)
 - [Demo Video](#demo-video)
@@ -39,7 +59,7 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 <div align="center">
 
 ### 📱 Dashboard Interface
-<img src="https://github.com/kharatshrujal-arch/Steller-3/blob/main/photo/UI.png" alt="AidPulse Dashboard" width="800"/>
+<img src="photo/UI.png" alt="AidPulse Dashboard" width="800"/>
 
 *Main dashboard showing wallet connection, balance display, and aid case management*
 
