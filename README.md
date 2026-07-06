@@ -8,18 +8,6 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 
 ---
 
-## 🚀 Live Demo
-
-<div align="center">
-
-### **[🌐 View Live Application](https://steller-3.vercel.app)**
-
-[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live-success?style=for-the-badge&logo=vercel)](https://steller-3.vercel.app)
-
-**Deployed on Vercel** | **Status: Live** ✅
-
-[📱 Mobile Version](https://steller-3.vercel.app/mobile.html) | [🎨 Preview](https://steller-3.vercel.app/preview.html)
-
 </div>
 
 > **⚠️ Important:** To interact with the live application, you need:
@@ -33,7 +21,6 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 
 ## Table of contents
 
-- [🚀 Live Demo](#-live-demo)
 - [How it works](#how-it-works)
 - [Screenshots](#screenshots)
 - [Demo Video](#demo-video)
