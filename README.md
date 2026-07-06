@@ -89,7 +89,7 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 
 https://github.com/user-attachments/assets/demo.mp4
 
-**Or watch locally:** [Download demo.mp4](vedio/demo.mp4)
+**Or watch locally:** [Download demo.mp4](PK)
 
 </div>
 
