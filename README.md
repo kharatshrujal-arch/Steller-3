@@ -12,11 +12,13 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 
 <div align="center">
 
-### **[🌐 View Live Application](https://your-app.vercel.app)**
+### **[🌐 View Live Application](https://steller-3.vercel.app)**
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/kharatshrujal-arch/Steller-3)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live-success?style=for-the-badge&logo=vercel)](https://steller-3.vercel.app)
 
 **Deployed on Vercel** | **Status: Live** ✅
+
+[📱 Mobile Version](https://steller-3.vercel.app/mobile.html) | [🎨 Preview](https://steller-3.vercel.app/preview.html)
 
 </div>
 
@@ -24,6 +26,8 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 > - 🦊 [Freighter Wallet](https://www.freighter.app/) installed
 > - 🌐 Wallet set to **Stellar Testnet**
 > - 💰 Test XLM from [Stellar Laboratory](https://laboratory.stellar.org/#account-creator?network=test)
+
+> **Note:** If the URL doesn't work, the deployment URL may have changed. Run `.\get-vercel-url.ps1` to find the current URL.
 
 ---
 
@@ -89,7 +93,7 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 
 https://github.com/user-attachments/assets/demo.mp4
 
-**Or watch locally:** [Download demo.mp4](PK)
+**Or watch locally:** [Download demo.mp4](vedio/demo.mp4)
 
 </div>
 
