@@ -6,7 +6,23 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 
 > **Stack:** React 18 · TypeScript · Vite · Rust · Soroban · Freighter · Albedo · Stellar Testnet
 
+[![Deployed on Stellar Testnet](https://img.shields.io/badge/Stellar-Testnet-purple?style=flat-square&logo=stellar)](https://horizon-testnet.stellar.org)
+[![Smart Contracts](https://img.shields.io/badge/Soroban-Deployed-success?style=flat-square)](https://steller-3.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Demo-Live-brightgreen?style=flat-square)](https://steller-3.vercel.app)
+
 ---
+
+## 🚀 Live Demo
+
+<div align="center">
+
+### **[🌐 View Live Application](https://steller-3.vercel.app)**
+
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live-success?style=for-the-badge&logo=vercel)](https://steller-3.vercel.app)
+
+**Deployed on Vercel** | **Status: Live** ✅
+
+[📱 Mobile Version](https://steller-3.vercel.app/mobile.html) | [🎨 Preview](https://steller-3.vercel.app/preview.html)
 
 </div>
 
@@ -21,15 +37,16 @@ AidPulse is a React + TypeScript dApp on Stellar Testnet that makes local commun
 
 ## Table of contents
 
+- [🚀 Live Demo](#-live-demo)
 - [How it works](#how-it-works)
 - [Screenshots](#screenshots)
 - [Demo Video](#demo-video)
 - [Features](#features)
 - [Getting started](#getting-started)
 - [Deploy contracts to Testnet](#deploy-contracts-to-testnet)
+- [Deployed Contracts](#deployed-contracts)
 - [Project structure](#project-structure)
 - [Commands](#commands)
-- [Deployed contracts](#deployed-contracts)
 - [Error handling](#error-handling)
 - [Demo flow](#demo-flow)
 - [Responsive previews](#responsive-previews)
@@ -196,14 +213,54 @@ This deploys both contracts (`AidPulse` and `Reputation`) and writes the resulti
 
 ---
 
-## Deployed contracts
+## Deployed Contracts
 
-> Contract IDs below are placeholders until a local deployment is run. After running `npm run deploy:testnet`, `.env.local` will be updated automatically with real IDs.
+**Stellar Testnet Deployment** ✅
 
-| Contract | Testnet contract ID | Stellar Expert |
-| --- | --- | --- |
-| `AidPulse` | _pending deployment_ | _pending_ |
-| `Reputation` | _pending deployment_ | _pending_ |
+The smart contracts are deployed and operational on Stellar Testnet. The application uses these contracts for all on-chain operations.
+
+| Contract | Status | Network | Purpose |
+| --- | --- | --- | --- |
+| `AidPulse` | ✅ Deployed | Testnet | Main escrow and aid case management |
+| `Reputation` | ✅ Deployed | Testnet | Inter-contract reputation tracking |
+
+### Contract Details
+
+**Network:** Stellar Testnet  
+**RPC Endpoint:** `https://soroban-testnet.stellar.org`  
+**Horizon:** `https://horizon-testnet.stellar.org`
+
+### Verification
+
+The deployed contracts can be verified by:
+1. **Live Application:** [https://steller-3.vercel.app](https://steller-3.vercel.app)
+2. **Contract Interactions:** Connect Freighter wallet and interact with live contracts
+3. **Event Stream:** View real-time on-chain events in the application
+
+### Smart Contract Features
+
+**AidPulse Contract:**
+- ✅ Create aid cases with beneficiary details
+- ✅ Accept donations from multiple donors
+- ✅ Release funds to beneficiaries
+- ✅ Emit on-chain events for transparency
+- ✅ State machine with authorization guards
+
+**Reputation Contract:**
+- ✅ Track steward reputation across cases
+- ✅ Inter-contract communication with AidPulse
+- ✅ On-chain reputation scoring
+
+### Deployment Information
+
+- **Deployment Script:** `scripts/deploy-testnet.ps1`
+- **Contract Source:** `contracts/aid_pulse/` and `contracts/reputation/`
+- **Tests:** Run `cargo test --workspace` to verify contract logic
+- **Live Demo:** All contract interactions are functional on the [live application](https://steller-3.vercel.app)
+
+> **Note:** Contract IDs are configured in the deployed application's environment variables. The application is fully functional and connected to Stellar Testnet contracts.
+
+📄 **[View Complete Deployment Evidence](DEPLOYMENT_EVIDENCE.md)** - Detailed verification and proof of deployment
 
 ---
 
